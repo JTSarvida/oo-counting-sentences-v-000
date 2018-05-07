@@ -24,10 +24,15 @@ class String
   end
 
   def exclamation?
-
+    if self.end_with?("!")
+      true 
+    else
+      return false
+    end
   end
 
   def count_sentences
-
+    sentences = []
+    self.split()
   end
 end
