@@ -33,6 +33,7 @@ class String
 
   def count_sentences
     sentences = []
-    self.split()
+    sentence_split = self.split(".","!","?")
+    return sentence_split
   end
 end
