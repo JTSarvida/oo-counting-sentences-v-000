@@ -32,7 +32,6 @@ class String
   end
 
   def count_sentences
-    index = 0
     sentence_split = self.split(/[.!?]/)
     return sentence_split.count
   end
