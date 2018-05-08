@@ -33,7 +33,7 @@ class String
 
   def count_sentences
     sentence_split = self.split(/[.!?]/)
-    
+    noEmptyStrings = sentence_split.reject { |c| c.empty? }
     return sentence_split.count
   end
 end
